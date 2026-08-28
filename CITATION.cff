@@ -1,0 +1,41 @@
+
+cff-version: 1.2.0
+
+message: "If you use this software, please cite the TRIS paper and this repository."
+
+title: "TRIS: A Tri-Layer Retrieval Integrity Sieve Against Knowledge Poisoning"
+
+type: software
+
+authors:
+
+  - family-names: "Munir"
+
+    given-names: "Muhaimin Bin"
+
+  - family-names: "Ononto"
+
+    given-names: "Akib Jawad"
+
+  - family-names: "Joynab"
+
+    given-names: "Nazia Shehnaz"
+
+  - family-names: "Thuraisingham"
+
+    given-names: "Bhavani"
+
+  - family-names: "Khan"
+
+    given-names: "Latifur"
+
+repository-code: "https://github.com/akibjawad14/tris"
+
+url: "https://github.com/akibjawad14/tris"
+
+version: "1.0.0"
+
+date-released: "2026-07-17"
+
+license: MIT
+

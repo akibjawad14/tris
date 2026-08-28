@@ -1,0 +1,114 @@
+
+# Secrets — the only must-exclude
+
+model_configs/*
+
+!model_configs/*.template
+
+!model_configs/*.example
+
+*.bak
+
+*.env
+
+.env
+
+*.key
+
+*.pem
+
+
+
+# Python cruft
+
+__pycache__/
+
+*.py[cod]
+
+*.egg-info/
+
+.ipynb_checkpoints/
+
+.pytest_cache/
+
+
+
+# Too big for GitHub / regenerable (NOT your results)
+
+*.faiss
+
+*.index
+
+*.pt
+
+*.bin
+
+*.ckpt
+
+*.npy
+
+*.npz
+
+datasets/
+
+data/
+
+beir_results/
+
+
+
+# OS / editor
+
+.DS_Store
+
+.vscode/
+
+.idea/
+
+*.swp
+
+
+# Local environments and packaging artifacts
+.venv/
+*.tar.gz
+gitignore
+.git_broken_*
+datasets
+
+# Cluster-specific files excluded from public repository
+*.slurm
+slurm-*.out
+
+# Local handoff and generated artifacts
+TRIS_HANDOFF_PATCH.zip
+APPLY_PATCH.sh
+requirements-full.txt
+logs/
+
+# Generated experiment outputs
+results/query_results/
+results/paper/query_results/*
+!results/paper/query_results/score_asr.py
+results/adaptive_summaries/
+results/robustrag_pareto/
+results/rebuttal/
+results/rebuttal_gpu/
+results_summary.txt
+
+# Generated retrieval outputs
+results/beir_results/
+
+# Local datasets
+datasets/
+
+# Local credentials
+model_configs/*.json
+!model_configs/*.json.template
+*.local
+.env
+.env.*
+.tris_secrets.env
+
+# Python cache
+__pycache__/
+*.py[cod]
