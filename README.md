@@ -1,6 +1,6 @@
 # TRIS: Tri-Layer Retrieval Integrity Sieve
 
-Code for **TRIS: A Tri-Layer Retrieval Integrity Sieve Against Knowledge Poisoning**.
+Code for [TRIS: A Tri-Layer Retrieval Integrity Sieve Against Knowledge Poisoning](https://arxiv.org/abs/2609.00470).
 
 TRIS filters retrieved evidence before it reaches the language model. The defense combines cross-embedding-space consistency, structural filtering of trigger-payload artifacts, and an optional LLM consistency check.
 
@@ -13,6 +13,8 @@ TRIS sits between the retriever and the language model and filters retrieved doc
 - **Layer 1 — Cross-embedding-space consistency.** Retrieved documents are re-embedded with an independent judge model and clustered in that space. Documents outside the majority cluster are filtered.
 - **Layer 2 — Structural filtering.** The document prefix is checked for query overlap and n-gram patterns associated with trigger-payload poisoning. Documents that exceed the configured thresholds are removed.
 - **Layer 3 — LLM consistency check.** An optional consistency step checks surviving documents against the language model's own answer and removes conflicting evidence.
+
+![High-level architecture of the Tri-Layer Sieve](architecture.png)
 
 
 ## Setup
